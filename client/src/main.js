@@ -9,19 +9,20 @@ const form = document.querySelector(".review-form");
 const submitBtn = document.querySelector("button[type='submit']");
 
 // ========================================
-// KONSTANTER
+// KONSTANTERl
+let bookTitle = form 
 // ========================================
 const API_URL = "http://localhost:3000/reviews";
 
 // ========================================
-// HJÄLPFUNKTIONER
+// let 
 // ========================================
 
 /**
  * Kontrollerar om alla formulärfält är ifyllda
  */
 const checkInputs = () => {
-  // TODO: Hämta värden från alla input-fält
+  // TODO: Hämta värden från alla input-fält  
   // TODO: Aktivera/inaktivera submit-knappen baserat på om alla fält är ifyllda
 };
 
@@ -120,6 +121,10 @@ form.addEventListener("input", checkInputs);
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
+
+
+  if (!Booktitel  || !autor  || ! reviewer || rating || !rewie )  return  alert ("fyll i alla fält!") 
+ 
   // TODO: Hämta alla värden från formuläret
   // TODO: Skapa ett reviewData-objekt
   // TODO: Skicka POST-request till backend
