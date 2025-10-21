@@ -8,10 +8,13 @@ import axios from "axios";
 const form = document.querySelector(".review-form");
 const submitBtn = document.querySelector("button[type='submit']");
 
-// ========================================
-// KONSTANTERl
-let bookTitle = form 
-// ========================================
+let bookTitle = form.element.bookTitle.value;// läser in det som skrivs i namn input
+let author = form.element.author.value;
+let reviewer = form.element.reviewer.value;
+let rating = form.element.rating.valeu;
+let review = form.element.review.value;
+
+
 const API_URL = "http://localhost:3000/reviews";
 
 // ========================================
@@ -123,7 +126,16 @@ form.addEventListener("submit", async (e) => {
 
 
 
-  if (!Booktitel  || !autor  || ! reviewer || rating || !rewie )  return  alert ("fyll i alla fält!") 
+  if (!bookTitle  || !author  || ! reviewer || rating || !review )  return  alert ("fyll i alla fält!") 
+
+   const messageData = {
+     bookTitle: bookTitle,
+
+     const message data 
+  
+    
+  
+};
  
   // TODO: Hämta alla värden från formuläret
   // TODO: Skapa ett reviewData-objekt
