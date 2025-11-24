@@ -1,19 +1,11 @@
-// ========================================
 import axios from "axios";
-// ========================================
+
 
 // ========================================
 // DOM-ELEMENT
 // ========================================
 const form = document.querySelector(".review-form");
 const submitBtn = document.querySelector("button[type='submit']");
-
-let bookTitle = form.element.bookTitle.value;// läser in det som skrivs i namn input
-let author = form.element.author.value;
-let reviewer = form.element.reviewer.value;
-let rating = form.element.rating.valeu;
-let review = form.element.review.value;
-
 
 const API_URL = "http://localhost:3000/reviews";
 
@@ -123,6 +115,13 @@ form.addEventListener("input", checkInputs);
  */
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
+
+let bookTitle = form.element.bookTitle.value;// läser in det som skrivs i namn input
+let author = form.element.author.value;
+let reviewer = form.element.reviewer.value;
+let rating = form.element.rating.valeu;
+let review = form.element.review.value;
+
 
 
 
