@@ -9,9 +9,6 @@ const submitBtn = document.querySelector("button[type='submit']");
 
 const API_URL = "http://localhost:3000/";
 
- git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
-
 // ========================================
 con
 
@@ -140,7 +137,7 @@ let review = form.element.review.value;
    const messageData = {
      bookTitle: bookTitle,
 
-     const message data 
+     
   
     
   
